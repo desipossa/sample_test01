@@ -11,6 +11,22 @@ $(function () {
 
 });
 
+$(function () {
+    const mainBusinessSlide = new Swiper('.mainBusinessSlide', {
+        slidesPerView: 1.2,
+        centeredSlides: true,
+        spaceBetween: 20,
+        loop: true,
+        breakpoints: {
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 8,
+                centeredSlides: false,
+            }
+        }
+    })
+});
+
 
 $(function () {
 
