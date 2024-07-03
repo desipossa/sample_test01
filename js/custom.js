@@ -27,6 +27,26 @@ $(function () {
     })
 });
 
+$(function () {
+    $('.mainPromotion .btn.open').on('click', function () {
+        $('.mainPromotion .desc').slideDown(1000, 'easeOutBounce');
+    });
+
+    $('.mainPromotion .btn.close').on('click', function () {
+        $('.mainPromotion .desc').slideUp(400, 'easeOutBounce');
+    });
+
+    $('#footer .link .f_link').on('click', function () {
+        $(this).toggleClass('on');
+        $(this).next().toggle();
+    });
+
+    $('#footer .to_top a').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, 1200)
+    })
+})
+
 
 $(function () {
 
